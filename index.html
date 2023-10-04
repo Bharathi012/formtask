@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-eqiv="x-UA-compatible"content="IE=Rdge">
+<meta name ="viewport"content="width,initial-scale=1.0">
+<title>cselector</title>
+</head>
+<style>
+.home{
+border:1px solid #d8d9ed;
+width:20rem;
+height:20rem;
+text-align:center;
+margin-left:30rem;
+margin-top:6rem;
+background-color:#d8d9ed;
+}
+.act{
+font-size:18px;
+
+}
+<!-- .fun{ -->
+<!-- padding:12px; -->
+<!-- background-color:#f08bb3; -->
+<!-- color:white; -->
+<!-- } -->
+.add{
+margin-top:3rem;
+}
+button{
+padding:1rem;
+background-color:#f08bb3;
+}
+
+
+
+</style>
+
+<body>
+
+
+ <div class="home">
+ <form action="alert.html" onsubmit="return(validation())">
+<div class="add">
+ <h2>register</h2>
+ 
+ 
+ <input class="del" id="add"type="text" placeholder="username"><br><br>
+ 
+ <input class="del" id="sub" type="password" placeholder="password"><br><br>
+ <button type="submit">submit</button>
+</div>
+
+  
+ </form>
+ </div>
+ <script>
+ function validation(){
+	var username = document.getElementById("add").value ;
+	var password=document.getElementById("sub").value ;
+ 
+ if(username==""){
+	alert("fill your username");
+	return false
+ }
+ else if(password==""){
+	alert("fill your password");
+	return false
+ }
+return true
+}
+ </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+</body>
+</html>	
+
+
+
+
+  
+
+
+
+
+
